@@ -18,7 +18,7 @@ version :: Version
 version = Version [0,1,0,0] []
 
 synopsis :: String
-synopsis = ""
+synopsis = "Parallel Batcher's Odd-Even Mergesort implementation"
 copyright :: String
 copyright = ""
 homepage :: String

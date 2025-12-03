@@ -20,36 +20,16 @@
   (major1) == 4 && (major2) <  18 || \
   (major1) == 4 && (major2) == 18 && (minor) <= 3)
 #endif /* MIN_VERSION_base */
-/* package parallel-3.3.0.0 */
-#ifndef VERSION_parallel
-#define VERSION_parallel "3.3.0.0"
-#endif /* VERSION_parallel */
-#ifndef MIN_VERSION_parallel
-#define MIN_VERSION_parallel(major1,major2,minor) (\
-  (major1) <  3 || \
-  (major1) == 3 && (major2) <  3 || \
-  (major1) == 3 && (major2) == 3 && (minor) <= 0)
-#endif /* MIN_VERSION_parallel */
-/* package random-1.3.1 */
-#ifndef VERSION_random
-#define VERSION_random "1.3.1"
-#endif /* VERSION_random */
-#ifndef MIN_VERSION_random
-#define MIN_VERSION_random(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  3 || \
-  (major1) == 1 && (major2) == 3 && (minor) <= 1)
-#endif /* MIN_VERSION_random */
-/* package vector-0.13.2.0 */
-#ifndef VERSION_vector
-#define VERSION_vector "0.13.2.0"
-#endif /* VERSION_vector */
-#ifndef MIN_VERSION_vector
-#define MIN_VERSION_vector(major1,major2,minor) (\
+/* package haskell-lab2-0.1.0.0 */
+#ifndef VERSION_haskell_lab2
+#define VERSION_haskell_lab2 "0.1.0.0"
+#endif /* VERSION_haskell_lab2 */
+#ifndef MIN_VERSION_haskell_lab2
+#define MIN_VERSION_haskell_lab2(major1,major2,minor) (\
   (major1) <  0 || \
-  (major1) == 0 && (major2) <  13 || \
-  (major1) == 0 && (major2) == 13 && (minor) <= 2)
-#endif /* MIN_VERSION_vector */
+  (major1) == 0 && (major2) <  1 || \
+  (major1) == 0 && (major2) == 1 && (minor) <= 0)
+#endif /* MIN_VERSION_haskell_lab2 */
 
 /* tool gcc-14.0.6 */
 #ifndef TOOL_VERSION_gcc
