@@ -1,8 +1,10 @@
 module TextProcessor 
-    ( Symbol
+    ( -- * Types
+      Symbol
     , WordString
     , Punctuation
     , Sentence
+      -- * Text Processing Functions
     , normalizeWhitespace
     , isValidChar
     , cleanWord
@@ -10,33 +12,5 @@ module TextProcessor
     , groupByFirstLetter
     ) where
 
-import Data.List (groupBy)
-import Data.Char (isAlpha, toLower)
-
-type Symbol = Char
-
-type WordString = String 
-
-type Punctuation = Char
-
-type Sentence = [WordString]
-
-normalizeWhitespace :: String -> String
-normalizeWhitespace text = unwords $ words text
-
-isValidChar :: Symbol -> Bool
-isValidChar c = isAlpha c || c == '-' || c == '\''
-
-cleanWord :: String -> WordString
-cleanWord = filter isAlpha
-
-extractWords :: String -> [WordString]
-extractWords text = 
-    filter (not . null)
-    $ map (map toLower . cleanWord)
-    $ words
-    $ normalizeWhitespace text
-
-groupByFirstLetter :: [WordString] -> [[WordString]]
-groupByFirstLetter = groupBy (\w1 w2 -> head w1 == head w2)
-
+import TextProcessor.Types
+import TextProcessor.Utils
